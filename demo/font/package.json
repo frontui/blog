@@ -1,0 +1,16 @@
+{
+  "name": "font",
+  "version": "1.0.0",
+  "description": "1. 下载用到的字体，非`eot`,`woff`,`ttf`,`svg`格式需要下载相应工具转换。",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^3.9.0",
+    "gulp-font-spider": "^0.2.0"
+  }
+}

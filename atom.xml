@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title><![CDATA[Frontpay FED | 钱沿支付前端团队]]></title>
+  <subtitle><![CDATA[钱沿支付前端团队博客]]></subtitle>
+  <link href="/blog/atom.xml" rel="self"/>
+  <link href="http://frontui.github.io/blog/"/>
+  <updated>2015-12-21T09:00:28.975Z</updated>
+  <id>http://frontui.github.io/blog/</id>
+  
+  <author>
+    <name><![CDATA[Frontpay FED]]></name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[Hello World]]></title>
+    <link href="http://frontui.github.io/blog/2015/12/21/hello-world/"/>
+    <id>http://frontui.github.io/blog/2015/12/21/hello-world/</id>
+    <published>2015-12-20T16:00:00.000Z</published>
+    <updated>2015-12-21T09:00:28.975Z</updated>
+    <content type="html"><![CDATA[<p><img src="http://7xnnvs.com1.z0.glb.clouddn.com/background.jpg" alt=""></p>
+<p>美好的事情从现在开始</p>
+<p>There’s good things in everyday!</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><img src="http://7xnnvs.com1.z0.glb.clouddn.com/background.jpg" alt=""></p>
+<p>美好的事情从现在开始</p>
+<p>There’s good things in everyday!</p>
+]]>
+    </summary>
+    
+      <category term="杂谈" scheme="http://frontui.github.io/blog/tags/%E6%9D%82%E8%B0%88/"/>
+    
+      <category term="杂谈" scheme="http://frontui.github.io/blog/categories/%E6%9D%82%E8%B0%88/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[自定义字体使用]]></title>
+    <link href="http://frontui.github.io/blog/2015/12/21/web-font/"/>
+    <id>http://frontui.github.io/blog/2015/12/21/web-font/</id>
+    <published>2015-12-20T16:00:00.000Z</published>
+    <updated>2015-12-21T09:00:29.007Z</updated>
+    <content type="html"><![CDATA[<p><img src="http://7xnnvs.com1.z0.glb.clouddn.com/6630439944559060666.jpg" alt=""></p>
+<h1 id="u81EA_u5B9A_u4E49_u5B57_u4F53_u4F7F_u7528"><a href="#u81EA_u5B9A_u4E49_u5B57_u4F53_u4F7F_u7528" class="headerlink" title="自定义字体使用"></a>自定义字体使用</h1><ol>
+<li><p>下载用到的字体，非<code>eot</code>,<code>woff</code>,<code>ttf</code>,<code>svg</code>格式需要下载相应工具转换。</p>
+</li>
+<li><p>在css中使用自定字体</p>
+</li>
+</ol>
+<a id="more"></a>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">        /*&#22768;&#26126; WebFont*/&#10;        @font-face &#123;&#10;          font-family: &#39;pinghei&#39;;&#10;          src: url(&#39;../font/pinghei.eot&#39;);&#10;          src:&#10;          url(&#39;../font/pinghei.eot?#font-spider&#39;) format(&#39;embedded-opentype&#39;),&#10;          url(&#39;../font/pinghei.woff&#39;) format(&#39;woff&#39;),&#10;          url(&#39;../font/pinghei.ttf&#39;) format(&#39;truetype&#39;),&#10;          url(&#39;../font/pinghei.svg&#39;) format(&#39;svg&#39;);&#10;          font-weight: normal;&#10;          font-style: normal;&#10;        &#125;&#10;&#10;        /*&#20351;&#29992;&#36873;&#25321;&#22120;&#25351;&#23450;&#23383;&#20307;*/&#10;        .home h1, .demo &#62; .test &#123;&#10;        font-family: &#39;pinghei&#39;;&#10;        &#125;&#10;```        &#10;&#10;3. &#23433;&#35013;&#23383;&#34523;</span><br></pre></td></tr></table></figure>
+<p>   npm install font-spider -g<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;4. &#32534;&#35793;&#25191;&#34892;</span><br></pre></td></tr></table></figure></p>
+<pre><code>font-spider index.html
+</code></pre><p>```</p>
+<blockquote>
+<p>注意：gulp-font-spider 暂时还有bug不能使用</p>
+</blockquote>
+<p>请参考demo目录，执行第3,4步</p>
+<h3 id="u76F8_u5173_u8D44_u6599"><a href="#u76F8_u5173_u8D44_u6599" class="headerlink" title="相关资料"></a>相关资料</h3><ul>
+<li><a href="http://font-spider.org/" target="_blank" rel="external">http://font-spider.org/</a></li>
+<li><a href="http://ecomfe.github.io/fontmin/" target="_blank" rel="external">http://ecomfe.github.io/fontmin/</a></li>
+</ul>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><img src="http://7xnnvs.com1.z0.glb.clouddn.com/6630439944559060666.jpg" alt=""></p>
+<h1 id="u81EA_u5B9A_u4E49_u5B57_u4F53_u4F7F_u7528"><a href="#u81EA_u5B9A_u4E49_u5B57_u4F53_u4F7F_u7528" class="headerlink" title="自定义字体使用"></a>自定义字体使用</h1><ol>
+<li><p>下载用到的字体，非<code>eot</code>,<code>woff</code>,<code>ttf</code>,<code>svg</code>格式需要下载相应工具转换。</p>
+</li>
+<li><p>在css中使用自定字体</p>
+</li>
+</ol>]]>
+    
+    </summary>
+    
+      <category term="webfont" scheme="http://frontui.github.io/blog/tags/webfont/"/>
+    
+      <category term="字体图标" scheme="http://frontui.github.io/blog/tags/%E5%AD%97%E4%BD%93%E5%9B%BE%E6%A0%87/"/>
+    
+      <category term="css" scheme="http://frontui.github.io/blog/categories/css/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[移动端开发-网页调试]]></title>
+    <link href="http://frontui.github.io/blog/2015/12/21/remote-debug-on-mobile/"/>
+    <id>http://frontui.github.io/blog/2015/12/21/remote-debug-on-mobile/</id>
+    <published>2015-12-20T16:00:00.000Z</published>
+    <updated>2015-12-21T09:00:28.976Z</updated>
+    <content type="html"><![CDATA[<p><img src="http://7xnnvs.com1.z0.glb.clouddn.com/6599310571354491293.jpg" alt=""></p>
+<h2 id="u5B89_u88C5weinre"><a href="#u5B89_u88C5weinre" class="headerlink" title="安装weinre"></a>安装weinre</h2><pre><code>npm install weinre -g -d
+</code></pre><p>绑定本地IP</p>
+<pre><code>weinre --boundHost 192.168.191.1
+</code></pre><a id="more"></a>    
+<p>获取weinre的js代码</p>
+<p>拷贝js代码到页面中</p>
+<h2 id="chrome_devtools"><a href="#chrome_devtools" class="headerlink" title="chrome devtools"></a>chrome devtools</h2><p>安装安卓usb驱动</p>
+<p>chrome地址栏输入</p>
+<pre><code>chrome://inspect
+</code></pre><p>手机允许，手机中chrome打开要调试页面</p>
+<p>chrome设备tab页面，点击<code>inspect</code></p>
+<h2 id="UC_u6D4F_u89C8_u5668_u8C03_u8BD5"><a href="#UC_u6D4F_u89C8_u5668_u8C03_u8BD5" class="headerlink" title="UC浏览器调试"></a>UC浏览器调试</h2><pre><code>http://www.uc.cn/business/developer/
+</code></pre><h2 id="u5FAE_u4FE1_u8C03_u8BD5"><a href="#u5FAE_u4FE1_u8C03_u8BD5" class="headerlink" title="微信调试"></a>微信调试</h2><pre><code>http://blog.qqbrowser.cc/
+</code></pre><blockquote>
+<p><a href="http://blog.qqbrowser.cc/cha-jian-shi-yong-zhi-nan/" target="_blank" rel="external">http://blog.qqbrowser.cc/cha-jian-shi-yong-zhi-nan/</a></p>
+<p><a href="http://yujiangshui.com/multidevice-frontend-debug/" target="_blank" rel="external">http://yujiangshui.com/multidevice-frontend-debug/</a></p>
+</blockquote>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><img src="http://7xnnvs.com1.z0.glb.clouddn.com/6599310571354491293.jpg" alt=""></p>
+<h2 id="u5B89_u88C5weinre"><a href="#u5B89_u88C5weinre" class="headerlink" title="安装weinre"></a>安装weinre</h2><pre><code>npm install weinre -g -d
+</code></pre><p>绑定本地IP</p>
+<pre><code>weinre --boundHost 192.168.191.1
+</code></pre>]]>
+    
+    </summary>
+    
+      <category term="工具" scheme="http://frontui.github.io/blog/tags/%E5%B7%A5%E5%85%B7/"/>
+    
+      <category term="移动端" scheme="http://frontui.github.io/blog/tags/%E7%A7%BB%E5%8A%A8%E7%AB%AF/"/>
+    
+      <category term="移动端" scheme="http://frontui.github.io/blog/categories/%E7%A7%BB%E5%8A%A8%E7%AB%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[npm源切换]]></title>
+    <link href="http://frontui.github.io/blog/2015/12/21/npm-to-cnpm/"/>
+    <id>http://frontui.github.io/blog/2015/12/21/npm-to-cnpm/</id>
+    <published>2015-12-20T16:00:00.000Z</published>
+    <updated>2015-12-21T09:00:28.976Z</updated>
+    <content type="html"><![CDATA[<p><img src="http://7xnnvs.com1.z0.glb.clouddn.com/4925812092536791626.jpg" alt=""></p>
+<h2 id="npm"><a href="#npm" class="headerlink" title="npm"></a>npm</h2><pre><code>npm config set registry http://registry.npmjs.org
+</code></pre><h2 id="cnpm"><a href="#cnpm" class="headerlink" title="cnpm"></a>cnpm</h2><pre><code>npm config set registry https://registry.npm.taobao.org
+</code></pre><p>详细内容待定补充    </p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><img src="http://7xnnvs.com1.z0.glb.clouddn.com/4925812092536791626.jpg" alt=""></p>
+<h2 id="npm"><a href="#npm" class="headerlink" title]]>
+    </summary>
+    
+      <category term="工具" scheme="http://frontui.github.io/blog/tags/%E5%B7%A5%E5%85%B7/"/>
+    
+      <category term="构建工具" scheme="http://frontui.github.io/blog/tags/%E6%9E%84%E5%BB%BA%E5%B7%A5%E5%85%B7/"/>
+    
+      <category term="构建工具" scheme="http://frontui.github.io/blog/categories/%E6%9E%84%E5%BB%BA%E5%B7%A5%E5%85%B7/"/>
+    
+  </entry>
+  
+</feed>

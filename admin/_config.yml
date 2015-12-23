@@ -81,7 +81,7 @@ duoshuo_shortname: frontui
 
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
-deploy:
-  type: git
-  repository: https://github.com/frontui/blog.git
-  branch: gh-pages
+#deploy:
+#  type: git
+#  repository: https://github.com/frontui/blog.git
+#  branch: gh-pages

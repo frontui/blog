@@ -21,6 +21,8 @@ author: tommyshao
 
 `name` 是包的名称。
 
+<!-- more -->
+
 ** 注意： **
 
 * 不要把 node 或者 js 放在名称中，因为你写了 package.json 它就已经认为 js 文件，不过你可以用“engine” 字段来声明使用何种引擎。

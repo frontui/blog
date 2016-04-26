@@ -15,7 +15,7 @@
 <meta property="og:description" content="1. doccodocco 是 Backbone 作者开源的一个 js 文档生成器。
  安装 
 1npm install -g docco">
-<meta property="og:updated_time" content="2015-12-23T03:03:20.222Z">
+<meta property="og:updated_time" content="2016-04-05T01:30:50.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JavaScript代码注释">
 <meta name="twitter:description" content="1. doccodocco 是 Backbone 作者开源的一个 js 文档生成器。
@@ -26,8 +26,8 @@
     <link rel="icon" href="favicon.png">
   
 
-  <link rel="stylesheet" href="/blog/css/style.css" type="text/css">
-  <link rel="stylesheet" href="/blog/font-awesome/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/blog/css/style.css">
+  <link rel="stylesheet" href="/blog/font-awesome/css/font-awesome.min.css">
   
 
   
@@ -104,11 +104,11 @@
     </div>
     <div class="article-info profile-block">
       <div class="article-info-block">
-        5
+        7
         <span>文章</span>
       </div>
       <div class="article-info-block">
-        6
+        10
         <span>标签</span>
       </div>
     </div>
@@ -119,11 +119,11 @@
           
           <td><a href="http://github.com/frontui" target="_blank" title="github"><i class="fa fa-github"></i></a></td>
           
-          <td><a href="/blog/#" target="_blank" title="twitter"><i class="fa fa-twitter"></i></a></td>
+          <td><a href="#" target="_blank" title="twitter"><i class="fa fa-twitter"></i></a></td>
           
-          <td><a href="/blog/#" target="_blank" title="facebook"><i class="fa fa-facebook"></i></a></td>
+          <td><a href="#" target="_blank" title="facebook"><i class="fa fa-facebook"></i></a></td>
           
-          <td><a href="/blog/#" target="_blank" title="dribbble"><i class="fa fa-dribbble"></i></a></td>
+          <td><a href="#" target="_blank" title="dribbble"><i class="fa fa-dribbble"></i></a></td>
           
           <td><a href="/blog/atom.xml" target="_blank" title="rss"><i class="fa fa-rss"></i></a></td>
           
@@ -171,7 +171,7 @@
     <div class="article-entry" itemprop="articleBody">
       
                 
-        <h2 id="1-_docco"><a href="#1-_docco" class="headerlink" title="1. docco"></a>1. <code>docco</code></h2><p><code>docco</code> 是 <code>Backbone</code> 作者开源的一个 <code>js</code> 文档生成器。</p>
+        <h2 id="1-docco"><a href="#1-docco" class="headerlink" title="1. docco"></a>1. <code>docco</code></h2><p><code>docco</code> 是 <code>Backbone</code> 作者开源的一个 <code>js</code> 文档生成器。</p>
 <p><strong> 安装 </strong></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g docco</span><br></pre></td></tr></table></figure>
 <a id="more"></a>
@@ -180,40 +180,40 @@
 <p>或者自定义生成路径</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docco demo.js -o ../docs</span><br></pre></td></tr></table></figure>
 <p>在同级目录下生成了 <code>docs</code> 文件夹，访问文件里面的 <code>index.html</code> 进行浏览。</p>
-<h3 id="u6587_u6863_u89C4_u8303"><a href="#u6587_u6863_u89C4_u8303" class="headerlink" title="文档规范"></a>文档规范</h3><p><code>docco</code> 的文档规范是使用 <code>markdown风格</code> ,在我们 <code>JS</code> 文件中使用 <code>//</code> 加 <code>空格</code>来使用。</p>
+<h3 id="文档规范"><a href="#文档规范" class="headerlink" title="文档规范"></a>文档规范</h3><p><code>docco</code> 的文档规范是使用 <code>markdown风格</code> ,在我们 <code>JS</code> 文件中使用 <code>//</code> 加 <code>空格</code>来使用。</p>
 <p>具体可参考 <code>Backbone</code> <a href="https://github.com/jashkenas/backbone/blob/master/backbone.js" target="_blank" rel="external">源码</a></p>
 <p><strong> 文档规范 </strong></p>
 <ol>
 <li>头部版权说明</li>
 </ol>
 <p><code>//</code> 加5个 <code>空格</code></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">//     Backbone.js 1.2.3&#10;&#10;//     (c) 2010-2015 Jeremy Ashkenas, DocumentCloud and Investigative Reporters &#38; Editors&#10;//     Backbone may be freely distributed under the MIT license.&#10;//     For all details and documentation:&#10;//     http://backbonejs.org</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">//     Backbone.js 1.2.3</span><br><span class="line"></span><br><span class="line">//     (c) 2010-2015 Jeremy Ashkenas, DocumentCloud and Investigative Reporters &amp; Editors</span><br><span class="line">//     Backbone may be freely distributed under the MIT license.</span><br><span class="line">//     For all details and documentation:</span><br><span class="line">//     http://backbonejs.org</span><br></pre></td></tr></table></figure>
 <ol>
 <li>高亮强调</li>
 </ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">// Establish the root object, `window` (`self`) in the browser, or `global` on the server.&#10;// We use `self` instead of `window` for `WebWorker` support.</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">// Establish the root object, `window` (`self`) in the browser, or `global` on the server.</span><br><span class="line">// We use `self` instead of `window` for `WebWorker` support.</span><br></pre></td></tr></table></figure>
 <ol>
 <li>标题</li>
 </ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">// Initial Setup&#10;// -------------</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">// Initial Setup</span><br><span class="line">// -------------</span><br></pre></td></tr></table></figure>
 <p>大致与 <code>markdown</code> 语法相同。</p>
 <p><strong>相关插件工具</strong></p>
 <ul>
 <li><a href="https://github.com/jsBoot/gulp-docco" target="_blank" rel="external">gulp-docco</a></li>
 <li><a href="https://github.com/DavidSouther/grunt-docco" target="_blank" rel="external">grunt-docco</a></li>
 </ul>
-<h2 id="2-_jsDoc"><a href="#2-_jsDoc" class="headerlink" title="2. jsDoc"></a>2. <code>jsDoc</code></h2><p><code>jsDoc</code> 是一种标准的 <code>js</code> 注释规范，大部分IDE都支持或者其插件。</p>
+<h2 id="2-jsDoc"><a href="#2-jsDoc" class="headerlink" title="2. jsDoc"></a>2. <code>jsDoc</code></h2><p><code>jsDoc</code> 是一种标准的 <code>js</code> 注释规范，大部分IDE都支持或者其插件。</p>
 <ol>
 <li><p>规范</p>
 <p>以<code>/**</code>开头以及 <code>**/</code>结尾</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/** &#36825;&#26159;&#20250;&#29983;&#25104;&#25991;&#26723;&#34892;&#20869;&#27880;&#37322; **/</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/** 这是会生成文档行内注释 **/</span><br></pre></td></tr></table></figure>
 <p>或者多行注释</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/**&#10;* &#23545;&#35805;&#26694;&#10;* @param &#123;string&#125; el &#23545;&#35805;&#26694;dom&#23545;&#35937;&#10;* @author tommyshao&#10;* @description &#36825;&#37324;&#26159;&#25551;&#36848;&#10;* @example &#31034;&#20363;&#20869;&#23481;&#10;*  var dialog = new Dialog();&#10;* @constructor&#10;* @return&#10;**/&#10;var Dialog = function() &#123;&#10;  //...&#10;&#125;&#10;&#10;Dialog.prototype = &#123;&#10;  show: function() &#123;&#10;    /**&#10;    * @type &#123;Boolean&#125;&#10;    **/&#10;    var isShown = false;&#10;  &#125;&#10;&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">/**</span><br><span class="line">* 对话框</span><br><span class="line">* @param &#123;string&#125; el 对话框dom对象</span><br><span class="line">* @author tommyshao</span><br><span class="line">* @description 这里是描述</span><br><span class="line">* @example 示例内容</span><br><span class="line">*  var dialog = new Dialog();</span><br><span class="line">* @constructor</span><br><span class="line">* @return</span><br><span class="line">**/</span><br><span class="line">var Dialog = function() &#123;</span><br><span class="line">  //...</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">Dialog.prototype = &#123;</span><br><span class="line">  show: function() &#123;</span><br><span class="line">    /**</span><br><span class="line">    * @type &#123;Boolean&#125;</span><br><span class="line">    **/</span><br><span class="line">    var isShown = false;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>官方文档：<a href="http://usejsdoc.org/" target="_blank" rel="external">http://usejsdoc.org/</a></p>
 <p><a href="http://segmentfault.com/a/1190000002583569" target="_blank" rel="external">gulp实现jsdoc实时预览</a></p>
 </li>
 </ol>
-<h2 id="u5176_u4ED6_u6587_u6863_u5DE5_u5177"><a href="#u5176_u4ED6_u6587_u6863_u5DE5_u5177" class="headerlink" title="其他文档工具"></a>其他文档工具</h2><ul>
+<h2 id="其他文档工具"><a href="#其他文档工具" class="headerlink" title="其他文档工具"></a>其他文档工具</h2><ul>
 <li><a href="http://yui.github.io/yuidoc/args/index.html" target="_blank" rel="external">YUIdoc</a></li>
 <li><a href="https://segmentfault.com/a/1190000002579067" target="_blank" rel="external">Javascript自动化文档工具：YUI Doc, JSDoc 3, JSDuck等比较</a></li>
 <li><a href="http://apidocjs.com/" target="_blank" rel="external">http://apidocjs.com/</a></li>
@@ -222,9 +222,9 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://frontui.github.io/blog/2015/12/23/JavaScript代码注释/" data-id="ciiia4n950000pkuffwuy7wl1" class="article-share-link">分享到</a>
+      <a data-url="http://frontui.github.io/blog/blog/2015/12/23/JavaScript代码注释/" data-id="cinh4yzr900009e0w13y2km6z" class="article-share-link">分享到</a>
       
-        <a href="http://frontui.github.io/blog/2015/12/23/JavaScript代码注释/#ds-thread" class="article-comment-link">评论</a>
+        <a href="http://frontui.github.io/blog/blog/2015/12/23/JavaScript代码注释/#ds-thread" class="article-comment-link">评论</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/杂谈/">杂谈</a></li></ul>
@@ -235,10 +235,19 @@
     
 <nav id="article-nav">
   
+    <a href="/blog/2016/04/05/package-json/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">上一篇</strong>
+      <div class="article-nav-title">
+        
+          package.json配置
+        
+      </div>
+    </a>
   
-    <a href="/blog/2015/12/21/web-font/" id="article-nav-older" class="article-nav-link-wrap">
+  
+    <a href="/blog/2015/12/21/npm-to-cnpm/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">下一篇</strong>
-      <div class="article-nav-title">自定义字体使用</div>
+      <div class="article-nav-title">npm源切换</div>
     </a>
   
 </nav>
@@ -249,7 +258,7 @@
 
 
   <section id="comments">
-    <div id="ds-thread" class="ds-thread" data-thread-key="http://frontui.github.io/blog/2015/12/23/JavaScript代码注释/" data-title="JavaScript代码注释" data-url="http://frontui.github.io/blog/2015/12/23/JavaScript代码注释/">
+    <div id="ds-thread" class="ds-thread" data-thread-key="http://frontui.github.io/blog/blog/2015/12/23/JavaScript代码注释/" data-title="JavaScript代码注释" data-url="http://frontui.github.io/blog/blog/2015/12/23/JavaScript代码注释/">
       <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by DuoShuo.</a></noscript>
       </div>
   </section>
@@ -267,6 +276,41 @@
           <li>
             
             <div class="item-thumbnail">
+              <a href="/blog/2016/04/26/build-svn-server/" class="thumbnail">
+  
+    <span style="background-image:url(http://7xnnvs.com1.z0.glb.clouddn.com/6630439944559060666.jpg
+)" alt="SVN服务器搭建" class="thumbnail-image"></span>
+  
+</a>
+            </div>
+            
+            <div class="item-inner">
+              <p class="item-category"><a class="article-category-link" href="/blog/categories/前端构建/">前端构建</a></p>
+              <p class="item-title"><a href="/blog/2016/04/26/build-svn-server/" class="title">SVN服务器搭建</a></p>
+              <p class="item-date"><time datetime="2016-04-25T16:00:00.000Z" itemprop="datePublished">2016-04-26</time></p>
+            </div>
+          </li>
+        
+          <li>
+            
+            <div class="item-thumbnail">
+              <a href="/blog/2016/04/05/package-json/" class="thumbnail">
+  
+    <span class="thumbnail-image thumbnail-none"></span>
+  
+</a>
+            </div>
+            
+            <div class="item-inner">
+              <p class="item-category"><a class="article-category-link" href="/blog/categories/前端工具/">前端工具</a></p>
+              <p class="item-title"><a href="/blog/2016/04/05/package-json/" class="title">package.json配置</a></p>
+              <p class="item-date"><time datetime="2016-04-05T01:30:00.000Z" itemprop="datePublished">2016-04-05</time></p>
+            </div>
+          </li>
+        
+          <li>
+            
+            <div class="item-thumbnail">
               <a href="/blog/2015/12/23/JavaScript代码注释/" class="thumbnail">
   
     <span class="thumbnail-image thumbnail-none"></span>
@@ -278,42 +322,6 @@
               <p class="item-category"><a class="article-category-link" href="/blog/categories/杂谈/">杂谈</a></p>
               <p class="item-title"><a href="/blog/2015/12/23/JavaScript代码注释/" class="title">JavaScript代码注释</a></p>
               <p class="item-date"><time datetime="2015-12-22T16:00:00.000Z" itemprop="datePublished">2015-12-23</time></p>
-            </div>
-          </li>
-        
-          <li>
-            
-            <div class="item-thumbnail">
-              <a href="/blog/2015/12/21/web-font/" class="thumbnail">
-  
-    <span style="background-image:url(http://7xnnvs.com1.z0.glb.clouddn.com/6630439944559060666.jpg
-)" alt="自定义字体使用" class="thumbnail-image"></span>
-  
-</a>
-            </div>
-            
-            <div class="item-inner">
-              <p class="item-category"><a class="article-category-link" href="/blog/categories/css/">css</a></p>
-              <p class="item-title"><a href="/blog/2015/12/21/web-font/" class="title">自定义字体使用</a></p>
-              <p class="item-date"><time datetime="2015-12-20T16:00:00.000Z" itemprop="datePublished">2015-12-21</time></p>
-            </div>
-          </li>
-        
-          <li>
-            
-            <div class="item-thumbnail">
-              <a href="/blog/2015/12/21/remote-debug-on-mobile/" class="thumbnail">
-  
-    <span style="background-image:url(http://7xnnvs.com1.z0.glb.clouddn.com/6599310571354491293.jpg
-)" alt="移动端开发-网页调试" class="thumbnail-image"></span>
-  
-</a>
-            </div>
-            
-            <div class="item-inner">
-              <p class="item-category"><a class="article-category-link" href="/blog/categories/移动端/">移动端</a></p>
-              <p class="item-title"><a href="/blog/2015/12/21/remote-debug-on-mobile/" class="title">移动端开发-网页调试</a></p>
-              <p class="item-date"><time datetime="2015-12-20T16:00:00.000Z" itemprop="datePublished">2015-12-21</time></p>
             </div>
           </li>
         
@@ -362,7 +370,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">分类</h3>
     <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/blog/categories/css/">css</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/blog/categories/杂谈/">杂谈</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/blog/categories/构建工具/">构建工具</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/blog/categories/移动端/">移动端</a><span class="category-list-count">1</span></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/blog/categories/css/">css</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/blog/categories/前端工具/">前端工具</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/blog/categories/前端构建/">前端构建</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/blog/categories/杂谈/">杂谈</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/blog/categories/构建工具/">构建工具</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/blog/categories/移动端/">移动端</a><span class="category-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -371,7 +379,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">标签</h3>
     <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/blog/tags/webfont/">webfont</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/blog/tags/字体图标/">字体图标</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/blog/tags/工具/">工具</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/blog/tags/杂谈/">杂谈</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/blog/tags/构建工具/">构建工具</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/blog/tags/移动端/">移动端</a><span class="tag-list-count">1</span></li></ul>
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/blog/tags/SVN/">SVN</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/blog/tags/github/">github</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/blog/tags/npm/">npm</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/blog/tags/webfont/">webfont</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/blog/tags/前端工具/">前端工具</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/blog/tags/字体图标/">字体图标</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/blog/tags/工具/">工具</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/blog/tags/杂谈/">杂谈</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/blog/tags/构建工具/">构建工具</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/blog/tags/移动端/">移动端</a><span class="tag-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -380,7 +388,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">标签云</h3>
     <div class="widget tagcloud">
-      <a href="/blog/tags/webfont/" style="font-size: 10px;">webfont</a> <a href="/blog/tags/字体图标/" style="font-size: 10px;">字体图标</a> <a href="/blog/tags/工具/" style="font-size: 20px;">工具</a> <a href="/blog/tags/杂谈/" style="font-size: 20px;">杂谈</a> <a href="/blog/tags/构建工具/" style="font-size: 10px;">构建工具</a> <a href="/blog/tags/移动端/" style="font-size: 10px;">移动端</a>
+      <a href="/blog/tags/SVN/" style="font-size: 10px;">SVN</a> <a href="/blog/tags/github/" style="font-size: 10px;">github</a> <a href="/blog/tags/npm/" style="font-size: 10px;">npm</a> <a href="/blog/tags/webfont/" style="font-size: 10px;">webfont</a> <a href="/blog/tags/前端工具/" style="font-size: 10px;">前端工具</a> <a href="/blog/tags/字体图标/" style="font-size: 10px;">字体图标</a> <a href="/blog/tags/工具/" style="font-size: 20px;">工具</a> <a href="/blog/tags/杂谈/" style="font-size: 20px;">杂谈</a> <a href="/blog/tags/构建工具/" style="font-size: 10px;">构建工具</a> <a href="/blog/tags/移动端/" style="font-size: 10px;">移动端</a>
     </div>
   </div>
 
@@ -389,7 +397,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">归档</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2015/12/">十二月 2015</a><span class="archive-list-count">5</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2016/04/">四月 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2015/12/">十二月 2015</a><span class="archive-list-count">5</span></li></ul>
     </div>
   </div>
 
@@ -402,7 +410,7 @@
   
   <div class="outer">
     <div id="footer-info" class="inner">
-      &copy; 2014 - 2015 Frontpay FED<br>
+      &copy; 2014 - 2016 Frontpay FED<br>
       Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>. Theme by <a href="http://github.com/ppoffice">PPOffice</a>
     </div>
   </div>
@@ -430,11 +438,11 @@
 
 
 
-  <link rel="stylesheet" href="/blog/fancybox/jquery.fancybox.css" type="text/css">
-  <script src="/blog/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="/blog/fancybox/jquery.fancybox.css">
+  <script src="/blog/fancybox/jquery.fancybox.pack.js"></script>
 
 
-<script src="/blog/js/script.js" type="text/javascript"></script>
+<script src="/blog/js/script.js"></script>
 
   </div>
 </body>

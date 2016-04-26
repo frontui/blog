@@ -3,23 +3,24 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Hello World | Frontpay FED | 钱沿支付前端团队</title>
+  <title>package.json配置 | Frontpay FED | 钱沿支付前端团队</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="美好的事情从现在开始
-There’s good things in everyday!">
+  <meta name="description" content="package.json简介本文档的所有package.json中必要的配置。它必须是真正的 json 格式，而不是 js 对象。
+本文档中描述的很多行为都受npm-config(7)的影响
+name在package.json中最重要的就是name和version字段是必不可少的，如果没有就无法通过npm install进行安装。name 和 version 一起组成的标识都是唯一的，更新包时应该">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://frontui.github.io/blog/2015/12/21/hello-world/index.html">
+<meta property="og:title" content="package.json配置">
+<meta property="og:url" content="http://frontui.github.io/blog/2016/04/05/package-json/index.html">
 <meta property="og:site_name" content="Frontpay FED | 钱沿支付前端团队">
-<meta property="og:description" content="美好的事情从现在开始
-There’s good things in everyday!">
-<meta property="og:image" content="http://7xnnvs.com1.z0.glb.clouddn.com/background.jpg">
-<meta property="og:updated_time" content="2016-04-05T01:30:50.000Z">
+<meta property="og:description" content="package.json简介本文档的所有package.json中必要的配置。它必须是真正的 json 格式，而不是 js 对象。
+本文档中描述的很多行为都受npm-config(7)的影响
+name在package.json中最重要的就是name和version字段是必不可少的，如果没有就无法通过npm install进行安装。name 和 version 一起组成的标识都是唯一的，更新包时应该">
+<meta property="og:updated_time" content="2016-04-26T07:58:20.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="美好的事情从现在开始
-There’s good things in everyday!">
-<meta name="twitter:image" content="http://7xnnvs.com1.z0.glb.clouddn.com/background.jpg">
+<meta name="twitter:title" content="package.json配置">
+<meta name="twitter:description" content="package.json简介本文档的所有package.json中必要的配置。它必须是真正的 json 格式，而不是 js 对象。
+本文档中描述的很多行为都受npm-config(7)的影响
+name在package.json中最重要的就是name和version字段是必不可少的，如果没有就无法通过npm install进行安装。name 和 version 一起组成的标识都是唯一的，更新包时应该">
   
   
     <link rel="icon" href="favicon.png">
@@ -135,7 +136,7 @@ There’s good things in everyday!">
 </aside>
 
       
-      <section id="main"><article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+      <section id="main"><article id="post-package-json" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
     
     
@@ -144,7 +145,7 @@ There’s good things in everyday!">
         
   
     <h1 class="article-title" itemprop="name">
-      Hello World
+      package.json配置
     </h1>
   
 
@@ -152,8 +153,8 @@ There’s good things in everyday!">
           
   <div class="article-date">
     <i class="fa fa-calendar"></i>
-    <a href="/blog/2015/12/21/hello-world/">
-      <time datetime="2015-12-20T16:00:00.000Z" itemprop="datePublished">2015-12-21</time>
+    <a href="/blog/2016/04/05/package-json/">
+      <time datetime="2016-04-05T01:30:00.000Z" itemprop="datePublished">2016-04-05</time>
     </a>
   </div>
 
@@ -161,7 +162,7 @@ There’s good things in everyday!">
           
   <div class="article-category">
   	<i class="fa fa-folder"></i>
-    <a class="article-category-link" href="/blog/categories/杂谈/">杂谈</a>
+    <a class="article-category-link" href="/blog/categories/前端工具/">前端工具</a>
   </div>
 
         </div>
@@ -170,19 +171,65 @@ There’s good things in everyday!">
     <div class="article-entry" itemprop="articleBody">
       
                 
-        <p><img src="http://7xnnvs.com1.z0.glb.clouddn.com/background.jpg" alt=""></p>
-<p>美好的事情从现在开始</p>
-<p>There’s good things in everyday!</p>
+        <h1 id="package-json"><a href="#package-json" class="headerlink" title="package.json"></a>package.json</h1><h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>本文档的所有<code>package.json</code>中必要的配置。它必须是真正的 json 格式，而不是 js 对象。</p>
+<p>本文档中描述的很多行为都受<a href="https://npmjs.org/doc/misc/npm-config.html" target="_blank" rel="external">npm-config(7)</a>的影响</p>
+<h2 id="name"><a href="#name" class="headerlink" title="name"></a>name</h2><p>在<code>package.json</code>中最重要的就是<code>name</code>和<code>version</code>字段是必不可少的，如果没有就无法通过<code>npm install</code>进行安装。<code>name</code> 和 <code>version</code> 一起组成的标识都是唯一的，更新包时应该同时更新<code>version</code>字段。</p>
+<p><code>name</code> 是包的名称。</p>
+<a id="more"></a>
+<p><strong> 注意： </strong></p>
+<ul>
+<li>不要把 node 或者 js 放在名称中，因为你写了 package.json 它就已经认为 js 文件，不过你可以用“engine” 字段来声明使用何种引擎。</li>
+<li>名称会作为 url 的一部分、命令行的参数或者文件夹的名字。任何 non-url-safe 的字段都是不允许使用的。</li>
+<li>名称可能作为参数被传入 require()，所以它应该尽可能简短并且语义清晰。</li>
+<li>在使用名称前，尽量去 <a href="http://registry.npmjs.org/" target="_blank" rel="external">npm registry</a> 查看此名称是否已被使用，影响到我们包的发布。</li>
+</ul>
+<h2 id="version"><a href="#version" class="headerlink" title="version"></a>version</h2><p>在 package.json 中最重的是 name 和 version 字段，因为他们都是必填项，如果缺少之一都是无法 install。</p>
+<p>version 必须能被 npm-semver解析，他被包在 npm 的依赖中。</p>
+<h2 id="description"><a href="#description" class="headerlink" title="description"></a>description</h2><p>此字段输入一段描述，来阐明包的简介，提交的描述方便使用 npm search 来搜索。</p>
+<h2 id="keywords"><a href="#keywords" class="headerlink" title="keywords"></a>keywords</h2><p>包的关键字描述，方便使用 npm search 搜索</p>
+<h2 id="homepage"><a href="#homepage" class="headerlink" title="homepage"></a>homepage</h2><p>项目官网的 url</p>
+<p><strong> 注意： </strong></p>
+<p>这里的 url 和 “url” 字段的不一样，如果你放一个“url”字段，registry 会以为是一个跳转到你发布在其他地方的地址，然后退出。</p>
+<h2 id="bugs"><a href="#bugs" class="headerlink" title="bugs"></a>bugs</h2><p>你的项目反馈文件的 url 或者邮件地址，这对遇到问题的使用者很有帮助。</p>
+<p>大概格式</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">...</span><br><span class="line">  &quot;bugs&quot; : &#123;</span><br><span class="line">  	&quot;url&quot;: &quot;http://github.com/frontui/frontui/issues&quot;,</span><br><span class="line">  	&quot;email&quot;: &quot;frontui@frontpay.cn&quot;</span><br><span class="line">  &#125;</span><br><span class="line">...</span><br></pre></td></tr></table></figure>
+<p>你可以指定一个值，只需要输入字符串就行不用 js 对象。</p>
+<p>如果你提供了 url，它会被 npm bugs 命令使用。</p>
+<h2 id="license"><a href="#license" class="headerlink" title="license"></a>license</h2><p>每个包我们应当指定一个许可证，声明此包的使用权利和限制。</p>
+<p>最简单的方法是，假如你用一个像 BSD 或者 MIT 这样通用的许可证，就只需指定许可证的名称，像这样</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;&quot;license&quot;: &quot;BSD&quot;&#125;</span><br></pre></td></tr></table></figure>
+<p>如果你有更复杂的许可条件，或者想要提供给更多地细节</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&quot;license&quot; : &#123;</span><br><span class="line">	&quot;type&quot;: &quot;MyLicense&quot;,</span><br><span class="line">	&quot;url&quot;: &quot;http://github.com/frontui/frontui/license.md&quot;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>在根目录提供一个许可证也是好的选择</p>
+<h2 id="author-和-contributors"><a href="#author-和-contributors" class="headerlink" title="author 和 contributors"></a>author 和 contributors</h2><p>author 是一个人，contributors 是一组人，person 也有 name 字段，可选的有 url，email 字段对象</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">	&quot;name&quot;: &quot;tommyshao&quot;,</span><br><span class="line">	&quot;email&quot;: &quot;tomieric@gmail.com&quot;,</span><br><span class="line">	&quot;url&quot;: &quot;http://getf2e.com&quot;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>或者可以把所有的东西放在一个字符串里面，npm 会给你解析</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&quot;tommyshao &lt;tomieric@gmail.com&gt; (http://getf2e.com)&quot;</span><br></pre></td></tr></table></figure>
+<p>email和 url 在两种形式中都是可选的。</p>
+<p>也可以在你的 npm 用户信息中设置一个顶级的 maintainers 字段。</p>
+<h2 id="files"><a href="#files" class="headerlink" title="files"></a>files</h2><p>files 是一个包含项目中的文件的数组，如果命名了一个文件夹，那也会包含文件夹的文件。（除非被其他条件忽略了）</p>
+<p>你也可以提供一个.npmignore文件，让即使被包含在 files 字段中的文件被留下，类似于.gitignore一样。</p>
+<h2 id="main"><a href="#main" class="headerlink" title="main"></a>main</h2><p>main字段配置一个文件名指向模块的入口程序，如果你的包名字叫做 foo，然后用户可以通过 <code>require(&#39;foo&#39;)</code>来引用，main 配置的模块的 exports 对象会被返回。</p>
+<p>这应该是一个相对于根目录的文件路径。</p>
+<p>对于大多数模块，它是必不可少的。</p>
+<h2 id="bin"><a href="#bin" class="headerlink" title="bin"></a>bin</h2><p>很多包都有一个或多个可执行的文件希望被放到 PATH 中。可直接使用 npm 命令执行。</p>
+<p>要用这个功能，首先给 package.json中的 bin 字段一个命令行到文件位置的 map 映射。初始化的时候 npm 会将它链接到 <code>prefix/bin</code>（全局初始化） 或者 <code>./node_modules/.bin/</code> （本地初始化）</p>
+<p>比如，npm 有</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#123; &quot;bin&quot; : &#123; &quot;npm&quot;: &quot;./cli.js&quot; &#125; &#125;</span><br><span class="line"></span><br><span class="line">所有，当你初始化 npm，它会创建一个符号链接到 cli.js 脚本到 `/usr/local/bin/npm`中。</span><br><span class="line"></span><br><span class="line">如果你有一个可执行文件，并且名字和包名一样。那么你可以只用一个字符串，比如：</span><br></pre></td></tr></table></figure>
+<p>{<br>    “name”: “my-program”,<br>    “version”: “1.2.5”,<br>    “bin”: “./path/to/program”<br>}<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">结果和这个一样</span><br></pre></td></tr></table></figure></p>
+<p>{<br>    “name”: “my-program”,<br>    “version”: “1.2.5”,<br>    “bin”: {<br>        “my-program”: “./path/to/program”<br>    }<br>}<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">## man</span><br><span class="line"></span><br><span class="line">指定一个单一的文件或者一个文件数据提供 man 程序使用。</span><br><span class="line"></span><br><span class="line">如果只提供一个单一的文件，那么它初始化后就是 `man &lt;pkgname&gt;` 的结果，而不管实际的文件名是什么，比如</span><br></pre></td></tr></table></figure></p>
+<p>{<br>    “name”: “foo”,<br>    “version”: “1.2.3”,<br>    “description”: “a packaged foo footer for ashome”,<br>    “main” : “foo.js”,<br>    “man”: “./man/doc.1”<br>}<br>```</p>
+<p>这样 ``</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://frontui.github.io/blog/blog/2015/12/21/hello-world/" data-id="cinh4yzrm00069e0w3ohvdl41" class="article-share-link">分享到</a>
+      <a data-url="http://frontui.github.io/blog/blog/2016/04/05/package-json/" data-id="cinh4yzrq00089e0wi3gfwx4e" class="article-share-link">分享到</a>
       
-        <a href="http://frontui.github.io/blog/blog/2015/12/21/hello-world/#ds-thread" class="article-comment-link">评论</a>
+        <a href="http://frontui.github.io/blog/blog/2016/04/05/package-json/#ds-thread" class="article-comment-link">评论</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/杂谈/">杂谈</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/github/">github</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/npm/">npm</a></li></ul>
 
     </footer>
   </div>
@@ -190,19 +237,19 @@ There’s good things in everyday!">
     
 <nav id="article-nav">
   
-    <a href="/blog/2015/12/21/npm-to-cnpm/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/blog/2016/04/26/build-svn-server/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption">上一篇</strong>
       <div class="article-nav-title">
         
-          npm源切换
+          SVN服务器搭建
         
       </div>
     </a>
   
   
-    <a href="/blog/2015/12/21/remote-debug-on-mobile/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/blog/2015/12/23/JavaScript代码注释/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">下一篇</strong>
-      <div class="article-nav-title">移动端开发-网页调试</div>
+      <div class="article-nav-title">JavaScript代码注释</div>
     </a>
   
 </nav>
@@ -213,7 +260,7 @@ There’s good things in everyday!">
 
 
   <section id="comments">
-    <div id="ds-thread" class="ds-thread" data-thread-key="http://frontui.github.io/blog/blog/2015/12/21/hello-world/" data-title="Hello World" data-url="http://frontui.github.io/blog/blog/2015/12/21/hello-world/">
+    <div id="ds-thread" class="ds-thread" data-thread-key="http://frontui.github.io/blog/blog/2016/04/05/package-json/" data-title="package.json配置" data-url="http://frontui.github.io/blog/blog/2016/04/05/package-json/">
       <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by DuoShuo.</a></noscript>
       </div>
   </section>

@@ -1,5 +1,3 @@
-# blog
-
 ## blog系统介绍
 
 `blog` 采用的是静态博客系统 `hexo` [hexo](https://hexo.io)
@@ -189,8 +187,6 @@ git commit -m "update"
 git push origin gh-pages
 ```
 
-打开浏览器
+fed博客
 
-```
-http://frontui.github.io/blog
-```
+[http://frontui.github.io/blog](http://frontui.github.io/blog)
